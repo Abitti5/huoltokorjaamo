@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Tietokonehuolto</title>
-    <style>
-        body {
-            display: flex;          /* tekee koko sivusta joustavan laatikon */
-            justify-content: center; /* vaakasuuntainen keskitys */
-            align-items: center;     /* pystysuuntainen keskitys */
-            height: 100vh;           /* täyttää koko näytön korkeuden */
-            text-align: center;      /* tekstit sisällössä keskelle */
-            margin: 0;               /* poistaa oletusmarginaalit */
-            font-family: Arial, sans-serif; /* siisti fontti */
-        }
+<meta charset="UTF-8">
+<title>Tietokonehuolto</title>
+
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-color: #111;
+    color: white;
+}
+
+/* laatikko */
 .container {
     max-width: 600px;
-    margin: auto;
     padding: 30px;
 
-    background-color: rgba(0, 0, 0, 0.7); /* tumma läpinäkyvä laatikko */
-    border-radius: 15px;                  /* pyöristetyt kulmat */
-    box-shadow: 0 0 20px rgba(0,0,0,0.5); /* varjo */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
 
-    <h1>Tietokonehuolto</h1>
-<p class="subtitle">Nopea ja luotettava tietokoneiden korjaus</p>
-
-<a href="#" class="button">Ota yhteyttä</a>
+    text-align: center;
 }
-    .subtitle {
+
+/* otsikko */
+h1 {
+    font-size: 3em;
+    color: #00ffcc;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* alaotsikko */
+.subtitle {
     font-size: 1.2em;
     color: #ccc;
     margin-bottom: 20px;
 }
 
+/* nappi */
 .button {
     display: inline-block;
     padding: 12px 25px;
@@ -47,57 +59,41 @@
 .button:hover {
     background-color: #00ffcc;
 }
-    </style>
-</head>
 
-<style>
-body {
-    background-image: url(''); /* polku kuvaan */
-    background-size: cover;   /* täyttää koko ruudun */
-    background-position: center; /* keskittää kuvan */
-    background-repeat: no-repeat; /* ei toista kuvaa */
-}
-</style>
-
-<style>
-h1 {
-    font-size: 4em;           /* iso teksti */
-    color: #00ffcc;           /* kirkas väri */
-    text-shadow: 2px 2px 5px black; /* varjo, parempi luettavuus */
-    margin-bottom: 0.5em;     /* hieman tilaa alla oleville elementeille */
-}
-</style>
-    
-<style>
-body {
-    background-color: #111;
-    color: white;
-    font-family: TimesNewRoman;
-}
-h1 {
-    color: #00ffcc;
-}
 h2 {
     color: #00ccff;
+    margin-top: 20px;
 }
+
 p {
     color: #ddd;
 }
 </style>
-    
+
+</head>
+
 <body>
+
 <div class="container">
+
 <h1>Tietokonehuolto</h1>
-<p>Tarjoan tietokoneiden huoltoa ja korjausta.</p>
+<p class="subtitle">Nopea ja luotettava tietokoneiden korjaus</p>
+
+<a href="#" class="button">Ota yhteyttä</a>
+
 <h2>Palvelut</h2>
-    <p>Virusten poisto</p>
-    <p>Windows asennus</p>
-    <p>Koneen nopeutus</p>
+<p>Virusten poisto</p>
+<p>Windows asennus</p>
+<p>Koneen nopeutus</p>
+
 <h2>Hinnasto</h2>
 <p>Perushuolto: 50€</p>
 <p>Windows asennus: 40€</p>
+
 <h2>Yhteystiedot</h2>
 <p>Sähköposti: esimerkki@email.com</p>
+
 </div>
+
 </body>
 </html>
